@@ -30,7 +30,7 @@ function game() {
     let computerScore = 0;
 
     for (let i = 0; i < 5; i++) {
-        const playerSelection = prompt("Enter rock, paper, or scissors");
+        const playerSelection = prompt("Enter rock, paper, or scissor");
         console.log("User entered", playerSelection);
         const computerSelection = getComputerChoice();
         console.log("Computer entered: ", computerSelection);
