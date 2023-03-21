@@ -2,7 +2,7 @@
 // Get Computer's choice
 
 function getComputerChoice() {
-    const choices = ["rock", "paper", "scissors"];
+    const choices = ["rock", "paper", "scissor"];
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex];
 
@@ -15,7 +15,7 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection == computerSelection) {
         return "It's a tie!";
     }
-    else if ((playerSelection == 'rock' && computerSelection == 'scissors') || (playerSelection == 'paper' && computerSelection == 'rock') || (playerSelection == 'scissors' && computerSelection == 'paper')) {
+    else if ((playerSelection == 'rock' && computerSelection == 'scissor') || (playerSelection == 'paper' && computerSelection == 'rock') || (playerSelection == 'scissor' && computerSelection == 'paper')) {
         return `You win! ${playerSelection} beats ${computerSelection}`;
     }
     else {
@@ -45,11 +45,11 @@ function game() {
     }
 
     if (playerScore > computerScore) {
-        console.log("Congrats!. You win the game! by: ",playerScore);
+        console.log("Congrats!. You win the game!");
     } else if (playerScore < computerScore) {
-        console.log("Oppsss!. You lose the game! by: ",computerScore);
+        console.log("Oppsss!. You lose the game!");
     } else {
-        console.log("Both scored equal. The game is tied!");
+        console.log("Both scored equal.The game is tied!");
     }
 }
 
